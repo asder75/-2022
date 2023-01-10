@@ -1,25 +1,36 @@
+using System.Text.Json.Serialization;
 using BlogBackend;
 using BlogBackend.Models;
+using Microsoft.AspNetCore.Http.Json;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+// For display enum as String not Int
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SchemaFilter<EnumSchemaFilter>();
+});
 
 // Connect to DataBase
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connection));
 
 // Add Identity
-builder.Services.AddIdentity<User, IdentityRole>()
+builder.Services.AddIdentity<UserDBModel, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddUserManager<UserManager<User>>();
+    .AddUserManager<UserManager<UserDBModel>>();
 
 // Add Services
 
