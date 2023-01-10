@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlogBackend;
 
-public class ApplicationDbContext : IdentityDbContext<User>
+public class ApplicationDbContext : IdentityDbContext<UserDBModel>
 {
     // Properties
-    public DbSet<User> Users { get; set; }
-    public DbSet<Post> Posts { get; set; }
-    public DbSet<Tag> Tags { get; set; }
-    public DbSet<Comment> Comments { get; set; }
+    public DbSet<UserDBModel> Users { get; set; }
+    public DbSet<PostDBModel> Posts { get; set; }
+    public DbSet<TagDBModel> Tags { get; set; }
+    public DbSet<CommentDBModel> Comments { get; set; }
     
     // Constructor
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {}

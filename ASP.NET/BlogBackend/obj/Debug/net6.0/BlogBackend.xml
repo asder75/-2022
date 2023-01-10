@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlogBackend</name>
+    </assembly>
+    <members>
+        <member name="M:BlogBackend.Controllers.CommentController.GetAllCommentsFromPostWith(System.Guid)">
+            <summary>
+            Get all nested comments(replies)
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.CommentController.AddCommentToPostWith(System.Guid)">
+            <summary>
+            Add a comment to a concrete post
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.CommentController.EditCommentWith(System.Guid)">
+            <summary>
+            Edit concrete comment
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.CommentController.DeleteCommentWith(System.Guid)">
+            <summary>
+            Delete concrete comment
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.PostController.GetListOfPostsBy(System.Collections.Generic.List{System.Guid},System.String,System.Int32,System.Int32,BlogBackend.Models.PostSorting,System.Int32,System.Int32)">
+            <summary>
+            Get a list of posts
+            </summary>
+            <param name="tags">tag list to filter by tags</param>
+            <param name="author">part of author name - for filtering by author</param>
+            <param name="min">minimum reading time in minutes - for filtering by reading time</param>
+            <param name="max">maximum reading time in minutes - for filtering by reading time</param>
+            <param name="sorting">option to sort posts</param>
+            <param name="page">page number</param>
+            <param name="size">required number of elements per page</param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogBackend.Controllers.PostController.GetPostBy(System.Guid)">
+            <summary>
+            Get information about concrete post
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.PostController.AddLikeOnPostWith(System.Guid)">
+            <summary>
+            Add like to concrete post
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.PostController.DeleteLikeOnPostWith(System.Guid)">
+            <summary>
+            Delete like from concrete post
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.TagController.GetTagList">
+            <summary>
+            Get tag list
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.UsersController.RegisterUserBy(BlogBackend.Models.UserRegisterModel)">
+            <summary>
+            Register new user
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.UsersController.LoginUserBy(BlogBackend.Models.LoginCredentials)">
+            <summary>
+            Log in to the system
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.UsersController.LogoutUser">
+            <summary>
+            Log out system user
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.UsersController.GetUserProfile">
+            <summary>
+            Get user profile
+            </summary>
+        </member>
+        <member name="M:BlogBackend.Controllers.UsersController.EditUserProfile(BlogBackend.Models.UserEditModel)">
+            <summary>
+            Edit user profile
+            </summary>
+        </member>
+    </members>
+</doc>

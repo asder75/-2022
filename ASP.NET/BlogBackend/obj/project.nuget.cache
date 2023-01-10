@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7lSdNifu2H7Mp70W9xjg6t4hV+Ne9M/cgrwoj/+/HfdEGxiAOoK0JfDBY0VK8QClSb97Xi53zhrAbyDZCf0f8g==",
+  "dgSpecHash": "ARe1HRHbHZW6YsborzlmRrQiZE0UPHtIcnIkQiUFYNclOJQUgtwQrjU7XsQV7Ul/po+gKMqc+xOOW5lhGviLrA==",
   "success": true,
   "projectFilePath": "/Users/stepanpotapov/Develop/ASP.NET/HITs_2Grade_Backend-Blog1/ASP.NET/BlogBackend/BlogBackend.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "/Users/stepanpotapov/.nuget/packages/npgsql/6.0.8/npgsql.6.0.8.nupkg.sha512",
     "/Users/stepanpotapov/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.8/npgsql.entityframeworkcore.postgresql.6.0.8.nupkg.sha512",
     "/Users/stepanpotapov/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/stepanpotapov/.nuget/packages/swashbuckle.aspnetcore.annotations/6.4.0/swashbuckle.aspnetcore.annotations.6.4.0.nupkg.sha512",
     "/Users/stepanpotapov/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/stepanpotapov/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/Users/stepanpotapov/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
