@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Text.Json.Serialization;
 using BlogBackend;
 using BlogBackend.Models;
@@ -18,9 +19,15 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(c =>
 {
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+    
     c.SchemaFilter<EnumSchemaFilter>();
+    c.ParameterFilter<GuidParameterFilter>();
+    c.EnableAnnotations();
 });
 
 // Connect to DataBase

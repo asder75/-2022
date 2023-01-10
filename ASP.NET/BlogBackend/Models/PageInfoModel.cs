@@ -1,3 +1,5 @@
+using Swashbuckle.AspNetCore.Annotations;
+
 namespace BlogBackend.Models;
 
 public class PageInfoModel

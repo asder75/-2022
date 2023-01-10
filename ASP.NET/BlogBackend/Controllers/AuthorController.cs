@@ -6,6 +6,7 @@ namespace BlogBackend.Controllers;
 
 [Route("api/author")]
 [ApiController]
+[Produces("application/json")]
 public class AuthorController : ControllerBase
 {
     // Properties
@@ -16,7 +17,7 @@ public class AuthorController : ControllerBase
     
     //Endpoints
     [HttpGet("list")]
-    public async Task<IActionResult> GetListOfAuthors([FromBody] PostDto data)
+    public async Task<IActionResult> GetListOfAuthors()
     {
         return Ok();
     }

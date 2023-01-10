@@ -16,5 +16,6 @@ public class UserDto
     [MinLength(1)]
     [EmailAddress]
     public string Email { get; set; }
+    [Phone]
     public string? PhoneNumber { get; set; }
 }

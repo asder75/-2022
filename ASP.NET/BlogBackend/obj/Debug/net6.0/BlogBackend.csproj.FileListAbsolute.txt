@@ -47,3 +47,6 @@
 /Users/stepanpotapov/Develop/ASP.NET/HITs_2Grade_Backend-Blog1/ASP.NET/BlogBackend/obj/Debug/net6.0/ref/BlogBackend.dll
 /Users/stepanpotapov/Develop/ASP.NET/HITs_2Grade_Backend-Blog1/ASP.NET/BlogBackend/bin/Debug/net6.0/appsettings.Development.json
 /Users/stepanpotapov/Develop/ASP.NET/HITs_2Grade_Backend-Blog1/ASP.NET/BlogBackend/bin/Debug/net6.0/appsettings.json
+/Users/stepanpotapov/Develop/ASP.NET/HITs_2Grade_Backend-Blog1/ASP.NET/BlogBackend/bin/Debug/net6.0/Swashbuckle.AspNetCore.Annotations.dll
+/Users/stepanpotapov/Develop/ASP.NET/HITs_2Grade_Backend-Blog1/ASP.NET/BlogBackend/bin/Debug/net6.0/BlogBackend.xml
+/Users/stepanpotapov/Develop/ASP.NET/HITs_2Grade_Backend-Blog1/ASP.NET/BlogBackend/obj/Debug/net6.0/BlogBackend.xml
