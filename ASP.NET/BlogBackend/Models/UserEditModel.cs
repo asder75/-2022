@@ -14,6 +14,6 @@ public class UserEditModel
     public DateTime? BirthDate { get; set; }
     [Required]
     public Gender Gender { get; set; }
-
+    [Phone]
     public string? PhoneNumber { get; set; }
 }
