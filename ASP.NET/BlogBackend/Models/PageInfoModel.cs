@@ -4,7 +4,7 @@ namespace BlogBackend.Models;
 
 public class PageInfoModel
 {
-    public int size { get; set; }
-    public int count { get; set; }
-    public int current { get; set; }
+    public int Size { get; set; }
+    public int Count { get; set; }
+    public int Current { get; set; }
 }

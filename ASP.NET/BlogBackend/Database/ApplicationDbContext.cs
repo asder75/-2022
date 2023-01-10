@@ -1,17 +1,17 @@
-using BlogBackend.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace BlogBackend;
+namespace BlogBackend.Database;
 
-public class ApplicationDbContext : IdentityDbContext<UserDBModel>
+public class ApplicationDbContext : IdentityDbContext<UserDbModel>
 {
-    // Properties
-    public DbSet<UserDBModel> Users { get; set; }
-    public DbSet<PostDBModel> Posts { get; set; }
-    public DbSet<TagDBModel> Tags { get; set; }
-    public DbSet<CommentDBModel> Comments { get; set; }
-    
-    // Constructor
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {}
+    public DbSet<UserDbModel> Users { get; set; }
+    public DbSet<PostDbModel> Posts { get; set; }
+    public DbSet<CommentDbModel> Comments { get; set; }
+    public DbSet<TagDbModel> Tags { get; set; }
+
+
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    {
+    }
 }
